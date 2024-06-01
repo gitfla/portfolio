@@ -1,20 +1,17 @@
 <template>
   <div class="myPadding">
-    <MyName/>
     <MyTabs/>
   </div>
 </template>
 
 
 <script>
-import MyName from './components/MyName.vue';
 import MyTabs from './components/MyTabs.vue';
 
 
 export default {
   name: 'App',
   components: {
-    MyName,
     MyTabs
   }
 }
@@ -32,6 +29,6 @@ export default {
 
 
 .myPadding {
-  padding: 10vh;
+  padding: 7vh 10vh;
 }
 </style>

@@ -1,16 +1,17 @@
 <template>
-  <div class="d-flex align-items-start tabs">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link show active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">about</button>
-    <button class="nav-link" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</button>
-    <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">contact</button>
+  <div class="d-flex bd-highlight">
+  <div class="me-auto bd-highlight align-self-center justify-content-center"><h1>Flavio Fiszman</h1></div>
+  <div class="nav nav-pills justify-content-center align-self-center" id="v-pills-tab" role="tablist">
+    <a class="nav-link show active ms-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">about</a>
+    <a class="nav-link ms-3" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</a>
+    <a class="nav-link ms-3" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">contact</a>
   </div>
-  <div class="tab-content w-100" id="v-pills-tabContent">
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
     <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><AboutTab/></div>
     <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab"><ProjectsTab/></div>
     <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab"><ContactTab/></div>
   </div>
-</div>
 </template>
 
 <script>
@@ -39,8 +40,13 @@ export default {
     margin: 10px 0px;
   }
 
-  .tabs {
-    height: match-parent;
+  .tab-content {
+    margin-top:150px;
+  }
+
+  h1 {
+    color:purple;
+    margin-bottom: 0px;
   }
 
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div class="aboutTab">
-    <div class="d-flex bd-highlight mb-3 justify-content-around first-row">
-      <AboutExperience class="p-2 bd-highlight"/>
-      <AboutEducation class=" p-2 bd-highlight"/>
+    <div class="d-flex bd-highlight mb-3 justify-content-between first-row">
+      <AboutExperience class="bd-highlight"/>
+      <AboutEducation class=" bd-highlight"/>
     </div>
-    <div class="d-flex bd-highlight mb-3 justify-content-around">
-      <div class=" p-2 bd-highlight"/>
-      <AboutSkills class=" p-2 bd-highlight"/>
+    <div class="d-flex bd-highlight mb-3 justify-content-between">
+      <AboutLanguages class=" bd-highlight"/>
+      <AboutSkills class=" bd-highlight"/>
     </div>
   </div>
 
@@ -16,22 +16,21 @@
 import AboutExperience from './AboutExperience';
 import AboutSkills from './AboutSkills';
 import AboutEducation from './AboutEducation';
+import AboutLanguages from './AboutLanguages';
 
 export default {
   name: 'AboutTab',
   components: {
     AboutExperience,
     AboutSkills,
-    AboutEducation
+    AboutEducation,
+    AboutLanguages
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .aboutTab {
-
-  }
 
   .container {
     padding-left: 0px;
