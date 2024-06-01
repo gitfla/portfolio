@@ -1,15 +1,21 @@
 <template>
-    <MyBorder/>
+  <div class="myPadding">
+    <MyName/>
+    <MyTabs/>
+  </div>
 </template>
 
 
 <script>
-import MyBorder from './components/MyBorder.vue';
+import MyName from './components/MyName.vue';
+import MyTabs from './components/MyTabs.vue';
+
 
 export default {
   name: 'App',
   components: {
-    MyBorder,
+    MyName,
+    MyTabs
   }
 }
 </script>
@@ -21,7 +27,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: #fbf7f5;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+
+.myPadding {
+  padding: 10vh;
+}
 </style>
