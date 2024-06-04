@@ -1,6 +1,6 @@
 <template>
   <div class="aboutEducation">
-    <h3>Languages / Frameworks</h3>
+    <h3 class="text-primary">Languages / Frameworks</h3>
     <p class="skillsTitle">Java, Python, C++, Javascript, SQL, Golang</p>
     <p> Node.js, Vue.js, React, TouchDesigner, Processing, Arduino </p>
 
@@ -17,26 +17,10 @@ export default {
 <style scoped>
 h3 {
   margin:0px;
-  color: purple;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 
 p {
   margin: 0px;
-}
-
-strong {
-  color: purple;
 }
 
 .workTitle {

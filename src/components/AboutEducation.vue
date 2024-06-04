@@ -1,6 +1,6 @@
 <template>
   <div class="aboutEducation">
-    <h3>Education</h3>
+    <h3 class="text-primary">Education</h3>
     <p class="workTitle"><strong>Computer Science </strong></p>
     <p>Bachelor of Science in Engineering</p>
     <p>University of Michigan -- Ann Arbor</p>
@@ -16,36 +16,35 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 0px;
-  color: purple;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="scss" scoped>
+  @import "custom.scss";
+  
+  h3 {
+    margin: 0px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
 
-p {
-  margin: 0px;
-}
+  p {
+    margin: 0px;
+  }
 
-strong {
-  color: purple;
-}
+  .workTitle {
+    margin: 30px 0px 0px 0px;
+    color: theme-color("primary");
+  }
 
-.workTitle {
-  margin: 30px 0px 0px 0px;
-}
+  .educationTitle {
+    margin-top:14px;
+  }
 
-.educationTitle {
-  margin-top:14px;
-}
 </style>
