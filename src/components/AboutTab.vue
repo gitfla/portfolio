@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutTab container">
+  <div class="aboutTab container-fluid">
     <div class="row">
       <div class="col">
         <AboutExperience/>
@@ -36,10 +36,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-  .container {
+  .col {
     padding-left: 0px;
-    padding-right: 0px;
-    margin-left:0px;
+
   }
 
   .first-row {

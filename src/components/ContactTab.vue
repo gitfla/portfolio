@@ -5,70 +5,39 @@
   </div>
 
 
-  <div class="container">
-  <div class="row justify-content-center">
-    <h1 class="col col-auto">
-      contact
-    </h1>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col col-md-2 col-3">
-      <strong>email:</strong> 
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="col col-auto text-primary tab-title">
+        Contact
+      </h3>
     </div>
-    <div class="col col-md-6 col-7">
-      {{email}}
-      <button type="button" class="btn btn-secondary" @click="copyToClipboard">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-            </svg>
-          </button>
+    <div class="row spacing">
+      <div class="col col-md-2 col-3 text-primary">
+        <strong>Email:</strong> 
+      </div>
+      <div class="col col-md-6 col-7">
+        {{email}}
+        <button type="button" class="btn btn-secondary same-line-button" @click="copyToClipboard">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+              </svg>
+            </button>
+      </div>
     </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col col-2">
-      <strong>socials:</strong>
-    </div>
-    <div class="col col-4">
-      <span class="social-button">
-            <a href="https://www.google.com.br" class="fa fa-linkedin"></a>
-          </span>
-          <span class="social-button">
-            <a href="https://www.google.com.br" class="fa fa-github"></a>
-          </span>
-    </div>
-  </div>
-</div>
-
-  <div class="ContactTab d-flex bd-highlight mb-3 justify-content-center first-row">
-      <h1 class="p-2 bd-highlight"> contact </h1>
-  </div>
-  <div class="d-flex bd-highlight mb-3 justify-content-center">
-    <div class=" p-2 bd-highlight">
-      <b>email:</b> 
-    </div>
-    <div class=" p-2 bd-highlight">
-      {{email}}
-      <button type="button" class="btn btn-secondary" @click="copyToClipboard">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-            </svg>
-          </button>
+    <div class="row">
+      <div class="col col-2 text-primary">
+        <strong>Socials:</strong>
+      </div>
+      <div class="col col-4">
+        <span class="social-button">
+              <a href="https://www.google.com.br" class="fa fa-linkedin"></a>
+            </span>
+            <span class="social-button">
+              <a href="https://www.google.com.br" class="fa fa-github"></a>
+            </span>
+      </div>
     </div>
   </div>
-  <div class="d-flex bd-highlight mb-3 justify-content-center">
-    <div class=" p-2 bd-highlight">
-      <b>socials:</b>
-    </div>
-    <div class=" p-2 bd-highlight">
-      <span class="social-button">
-            <a href="https://www.google.com.br" class="fa fa-linkedin"></a>
-          </span>
-          <span class="social-button">
-            <a href="https://www.google.com.br" class="fa fa-github"></a>
-          </span>
-    </div>
-  </div>
-
 </template>
 
 <script>
@@ -95,10 +64,21 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-  h1 {
-    margin-bottom: 50px;
+<style lang="scss" scoped>
+  @import "custom.scss";
+  .spacing {
+    margin-bottom: 15px;
+  }
+  .col {
+    padding-left: 0px;
+  }
+  .tab-title {
+    padding-left: 0px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .same-line-button {
+    margin-left: 15px;
   }
 
   .table > tbody > tr > td {
@@ -132,5 +112,10 @@ export default {
 
   .alert {
     margin-top: 20px;
+  }
+
+  .fa {
+    background-color: theme-color("secondary");
+    color: theme-color("dark");
   }
 </style>

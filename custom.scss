@@ -7,9 +7,6 @@
 // 2. Include any default variable overrides here
 $link-color: #304657;
 
-$theme-colors: (
-  "primary": purple,
-);
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "./node_modules/bootstrap/scss/variables";
@@ -21,6 +18,8 @@ $theme-colors: (
 // Create your own map
 $custom-colors: (
         "my-custom-color": #1B66A1,
+        "primary": purple,
+        "secondary": pink,
 );
 
 // Merge the maps
