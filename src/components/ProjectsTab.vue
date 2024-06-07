@@ -1,56 +1,26 @@
 <template>
   <h3 class="tab-title text-primary">Projects</h3>
-  <div id="accordion">
+  <div id="container">
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
 
-    <div>
-    <div class="col card">
-      <div class="card-header btn" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-        <ProjectCard 
-          projectName="Flip To Shhh"
-          projectBrief="Android feature that allows users to silence notifications when flipping the device."
-          tags=[a]
-        />
+      <div v-for="project in projects" :key="project.id" class="alignment">
+        <div class="col card">
+          <div class="card-header btn" data-bs-toggle="collapse" :data-bs-target="'#collapse' + project.id" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+            <ProjectCard 
+              v-bind:projectName="project.name"
+              v-bind:projectBrief="project.brief"
+              v-bind:tags="project.tags"
+            />
+          </div>
+
+          <div :id="'collapse' + project.id" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="col card g-10">
-      <div class="card-header btn" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
-        <ProjectCard 
-          projectName="Video Game Cockpit"
-          projectBrief="Two-player game using arcade controls to immerse players in a singer's new album."
-        />
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="col card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
 </div>
 </template>
@@ -82,6 +52,37 @@ export default {
           brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
           tags: ["touchdesigner", "sensors", "visualprogramming"]
         },
+        {
+          id: 3,
+          name: "Video Game Cockpit",
+          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
+          tags: ["touchdesigner", "sensors", "visualprogramming"]
+        },
+        {
+          id: 4,
+          name: "Video Game Cockpit",
+          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
+          tags: ["touchdesigner", "sensors", "visualprogramming"]
+        },
+        {
+          id: 5,
+          name: "Video Game Cockpit",
+          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
+          tags: ["touchdesigner", "sensors", "visualprogramming"]
+        },
+        {
+          id: 6,
+          name: "Video Game Cockpit",
+          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
+          tags: ["touchdesigner", "sensors", "visualprogramming"]
+        },
+        {
+          id: 7,
+          name: "Video Game Cockpit",
+          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
+          tags: ["touchdesigner", "sensors", "visualprogramming"]
+        },
+
       ]
     }
   }
@@ -90,6 +91,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .alignment {
+    align-items:start;
+  }
 
   .tab-title {
     padding-left: 0px;
