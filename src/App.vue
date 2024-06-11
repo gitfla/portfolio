@@ -30,6 +30,10 @@ export default {
   min-height: 100vh;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 
 .myPadding {
   padding: 7vh 10vh;

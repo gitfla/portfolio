@@ -15,7 +15,13 @@
 
           <div :id="'collapse' + project.id" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <div class="container">
+                <div class="row">
+                  <div class="container">
+                    Role: Developer
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -26,7 +32,7 @@
 </template>
 
 <script>
-  import ProjectCard from './ProjectCard';
+import ProjectCard from './ProjectCard';
 
 export default {
   name: 'ProjectsTab',
@@ -42,45 +48,57 @@ export default {
       [
         {
           id: 1,
-          name: "Flip to Shhh",
-          brief: "Android feature that allows users to silence notifications when flipping the device.",
-          tags: ["android", "sensors"]
+          name: "Flip to Shhh -- Digital Wellbeing",
+          brief: "Android feature that allows users to silence notifications when flipping the device face-down on a surface.",
+          tags: ["android", "sensors", "google"]
         },
         {
           id: 2,
-          name: "Video Game Cockpit",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          name: "Conversation Widget",
+          brief: "Android widget that brings enhanced communication with a contact to the homescreen.",
+          tags: ["android", "notifications", "widget", "google"]
         },
         {
           id: 3,
-          name: "Video Game Cockpit",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          name: "Search Engine Migration",
+          brief: "Migration of Kaggle's Search engine from Azure Search to ElasticSearch + Kubernetes",
+          tags: ["elasticsearch", "kubernetes", "webdev", "cloud", "search"]
         },
         {
           id: 4,
-          name: "Video Game Cockpit",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          name: "User Accounts' Restructuring",
+          brief: "Design and implementation of Kaggle's user accounts' journey, from creation to deletion.",
+          tags: ["webdev", "APIs", "SMSverification"]
         },
         {
           id: 5,
-          name: "Video Game Cockpit",
+          name: "Airplane Cockpit Video Game",
           brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
         },
         {
           id: 6,
-          name: "Video Game Cockpit",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          name: "Heartbeat Installation",
+          brief: "Interactive immersive technological installation that played music and lights based on users' heart rates.",
+          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
         },
         {
           id: 7,
-          name: "Video Game Cockpit",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "sensors", "visualprogramming"]
+          name: "Serve",
+          brief: "A website that simulates conversations between famous writers based on a common word that connects quotes from their books.",
+          tags: ["webdev", "inforetrieval", "search"]
+        },
+        {
+          id: 8,
+          name: "Itaú Table",
+          brief: "Interactive table installation that prompted WebSummit Rio's atendees' to discuss the topics of the day.",
+          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
+        },
+        {
+          id: 9,
+          name: "GDPR Compliance",
+          brief: "Front-end changes to make Kaggle GDPR compliant, including terms and conditions page and cookies aknowledgement.",
+          tags: ["webdev", "communications", "legal"]
         },
 
       ]
@@ -90,10 +108,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  .alignment {
-    align-items:start;
-  }
+<style lang="scss" scoped>
+  @import "custom.scss";
 
   .tab-title {
     padding-left: 0px;
@@ -101,34 +117,61 @@ export default {
     margin-bottom: 30px;
   }
 
-.card {
-  background-color: white;
-  border-color:black;
-}
-.card-header {
-  background-color: transparent;
-  border: 0;
-  padding: 20px;
-}
-.col {
-  margin: 0px 30px;
-}
+  .card {
+    background-color: white;
+    border-color:black;
+  }
+  .card-header {
+    background-color: transparent;
+    border: 0;
+    padding: 20px;
+  }
+  .card-body {
+    background-color: transparent;
+    border: 0;
+    padding: 20px;
+  }
 
-.my-gap {
-  gap: 20px;
-}
-h3 {
-  margin: 0px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .alignment {
+    align-items:start;
+    margin: 40px 0px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    .alignment {
+      padding: 0px 40px;
+    }
+    .alignment:nth-child(2n+1) {
+      padding-left: 0px;
+    }
+    .alignment:nth-child(2n) {
+      padding-right: 0px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .alignment {
+      padding: 0px 40px;
+    }
+    .alignment:nth-child(3n+1) {
+      padding-left: 0px;
+    }
+    .alignment:nth-child(3n) {
+      padding-right: 0px;
+    }
+  }
+
+  h3 {
+    margin: 0px 0 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
 </style>

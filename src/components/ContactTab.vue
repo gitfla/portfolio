@@ -30,10 +30,10 @@
       </div>
       <div class="col col-4">
         <span class="social-button">
-              <a href="https://www.google.com.br" class="fa fa-linkedin"></a>
+              <a href="https://www.linkedin.com/in/flavio-fiszman-2a39a7140" target="_blank" class="fa fa-linkedin"></a>
             </span>
             <span class="social-button">
-              <a href="https://www.google.com.br" class="fa fa-github"></a>
+              <a href="https://github.com/gitfla" target="_blank" class="fa fa-github"></a>
             </span>
       </div>
     </div>
