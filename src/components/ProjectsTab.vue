@@ -2,31 +2,14 @@
   <h3 class="tab-title text-primary">Projects</h3>
   <div id="container">
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
-
       <div v-for="project in projects" :key="project.id" class="alignment">
-        <div class="col card">
-          <div class="card-header btn" data-bs-toggle="collapse" :data-bs-target="'#collapse' + project.id" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-            <ProjectCard 
-              v-bind:projectName="project.name"
-              v-bind:projectBrief="project.brief"
-              v-bind:tags="project.tags"
-            />
-          </div>
-
-          <div :id="'collapse' + project.id" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <div class="container">
-                <div class="row">
-                  <div class="container">
-                    Role: Developer
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard 
+          v-bind:projectName="project.name"
+          v-bind:projectBrief="project.brief"
+          v-bind:tags="project.tags"
+          v-bind:id="project.id"
+        />
       </div>
-
   </div>
 </div>
 </template>
@@ -115,21 +98,6 @@ export default {
     padding-left: 0px;
     font-size: 30px;
     margin-bottom: 30px;
-  }
-
-  .card {
-    background-color: white;
-    border-color:black;
-  }
-  .card-header {
-    background-color: transparent;
-    border: 0;
-    padding: 20px;
-  }
-  .card-body {
-    background-color: transparent;
-    border: 0;
-    padding: 20px;
   }
 
   .alignment {
