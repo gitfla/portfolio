@@ -15,15 +15,27 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+  @import "custom.scss";
 
   .homeTab {
     display: flex;
     justify-content: flex-end;
     align-items:flex-end;
-    height: 50vh;
+    height: 30vh;
     flex: 1;
     text-align: end;
+  }
+  @include media-breakpoint-between(sm, md) {
+    .homeTab {
+      height: 50vh;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .homeTab {
+      height: 50vh;
+    }
   }
 
   h3 {
