@@ -37,7 +37,7 @@ export default {
 
 
   .myPadding {
-    padding: 5vh 7vh;
+    padding: 6vh 8vh;
   }
   @include media-breakpoint-between(sm, md) {
     .myPadding {
