@@ -31,7 +31,7 @@ export default {
       [
         {
           id: 1,
-          name: "Flip to Shhh Digital Wellbeing",
+          name: "Flip to Shhh",
           brief: "Android feature that allows users to silence notifications when flipping the device face-down on a surface.",
           tags: ["android", "sensors", "google"]
         },
