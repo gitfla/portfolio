@@ -31,7 +31,7 @@ export default {
       [
         {
           id: 1,
-          name: "Flip to Shhh -- Digital Wellbeing",
+          name: "Flip to Shhh Digital Wellbeing",
           brief: "Android feature that allows users to silence notifications when flipping the device face-down on a surface.",
           tags: ["android", "sensors", "google"]
         },
@@ -44,26 +44,26 @@ export default {
         {
           id: 3,
           name: "Search Engine Migration",
-          brief: "Migration of Kaggle's Search engine from Azure Search to ElasticSearch + Kubernetes",
+          brief: "Migration of Kaggle's Search engine from Azure Search to ElasticSearch and Kubernetes.",
           tags: ["elasticsearch", "kubernetes", "webdev", "cloud", "search"]
         },
         {
           id: 4,
           name: "User Accounts' Restructuring",
-          brief: "Design and implementation of Kaggle's user accounts' journey, from creation to deletion.",
+          brief: "Design and implementation of Kaggle's user accounts' journey, including creation, verification and deletion.",
           tags: ["webdev", "APIs", "SMSverification"]
         },
         {
           id: 5,
           name: "Airplane Cockpit Video Game",
-          brief: "Two-player game using arcade controls to immerse players in a singer's new album.",
-          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
+          brief: "Two-player game using arcade controls to introduce players to a singer's new music.",
+          tags: ["touchdesigner", "arduino", "sensors"]
         },
         {
           id: 6,
           name: "Heartbeat Installation",
-          brief: "Interactive immersive technological installation that played music and lights based on users' heart rates.",
-          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
+          brief: "Interactive immersive installation that played music and lights based on users' heart rates.",
+          tags: ["touchdesigner", "arduino", "sensors"]
         },
         {
           id: 7,
@@ -75,7 +75,7 @@ export default {
           id: 8,
           name: "Itaú Table",
           brief: "Interactive table installation that prompted WebSummit Rio's atendees' to discuss the topics of the day.",
-          tags: ["touchdesigner", "arduino", "sensors", "visualprogramming"]
+          tags: ["touchdesigner", "arduino", "sensors"]
         },
         {
           id: 9,
@@ -106,7 +106,7 @@ export default {
   }
   @include media-breakpoint-between(md, lg) {
     .alignment {
-      padding: 0px 40px;
+      padding: 0px 30px;
     }
     .alignment:nth-child(2n+1) {
       padding-left: 0px;
@@ -118,7 +118,7 @@ export default {
 
   @include media-breakpoint-up(lg) {
     .alignment {
-      padding: 0px 40px;
+      padding: 0px 30px;
     }
     .alignment:nth-child(3n+1) {
       padding-left: 0px;
