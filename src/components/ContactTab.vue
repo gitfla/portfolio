@@ -121,7 +121,18 @@ export default {
   }
 
   .extra-space {
-    margin-left:10px;
+    margin-left:0px;
+  }
+  @include media-breakpoint-between(sm, md) {
+    .extra-space {
+      margin-left:10px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .extra-space {
+      margin-left:10px;
+    }
   }
 
   .table > tbody > tr > td {
