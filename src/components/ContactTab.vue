@@ -4,7 +4,41 @@
       <font-awesome-icon class="custom-alert-icon" icon="check" />Link copied to clipboard
   </div>
 
+  <h3 class="tab-title text-primary">Contact</h3>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-sm-row flex-column justify-content-start align-items-sm-center line-padding">
+      <div class="bd-highlight row-padding">
+        <strong class="text-primary">Email:</strong>
+      </div>
 
+      <div class="d-flex mr-2 justify-content-start align-items-center extra-space">
+        <div class="bd-highlight email-same-line">
+          <div> {{email}}</div>
+        </div>
+        <button type="button" class="btn btn-secondary" @click="copyToClipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                </svg>
+              </button>
+      </div>
+    </div>
+    <div class="d-flex flex-sm-row flex-column justify-content-start align-items-sm-center">
+      <div class="bd-highlight row-padding text-primary">
+        <strong>Socials:</strong>
+      </div>
+      <div class="bd-hightlight">
+        <span class="social-button">
+              <a href="https://www.linkedin.com/in/flavio-fiszman-2a39a7140" target="_blank" class="fa fa-linkedin"></a>
+            </span>
+            <span class="social-button">
+              <a href="https://github.com/gitfla" target="_blank" class="fa fa-github"></a>
+            </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin-top:100px"/>
   <div class="container-fluid">
     <div class="row">
       <h3 class="col col-auto text-primary tab-title">
@@ -17,7 +51,7 @@
       </div>
       <div class="col col-md-6 col-7">
         {{email}}
-        <button type="button" class="btn btn-secondary same-line-button" @click="copyToClipboard">
+        <button type="button" class="btn btn-secondary" @click="copyToClipboard">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
               </svg>
@@ -25,7 +59,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col col-2 text-primary">
+      <div class="col col-md-2 col-3 text-primary">
         <strong>Socials:</strong>
       </div>
       <div class="col col-4">
@@ -77,15 +111,24 @@ export default {
     font-size: 30px;
     margin-bottom: 30px;
   }
-  .same-line-button {
-    margin-left: 15px;
+
+  .email-same-line {
+    margin-right: 15px;
+  }
+
+  .line-padding {
+    padding-bottom:15px;
+  }
+
+  .extra-space {
+    margin-left:10px;
   }
 
   .table > tbody > tr > td {
      vertical-align: middle;
      padding-right: 30px;
      background-color:#fbf7f5;;
-}
+  }
 
   .custom-alert-icon{
     padding-right: 10px;
@@ -93,6 +136,27 @@ export default {
 
   .social-button {
     padding-right:20px;
+  }
+
+  .tab-title {
+    padding-left: 0px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .row-padding {
+    padding-right: 60px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    .row-padding {
+      padding-right: 100px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .row-padding {
+      padding-right: 120px;
+    }
   }
 
   .fa {
