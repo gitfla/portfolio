@@ -4,11 +4,11 @@
       <div class="card-header btn" data-bs-toggle="collapse" :data-bs-target="'#collapse' + id" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
         <div class="container">
           <div class="row">
-            <div class="col col-lg-7 col-sm-8">
+            <div class="col col-lg-7 col-sm-8 col-12">
               <div class="text-primary project-title"><strong>{{projectName}}</strong></div>
               <div class="project-brief">{{projectBrief}}</div>
             </div>
-            <div class="col col-lg-5 col-sm-4">
+            <div class="col col-lg-5 col-sm-4 col-12">
               <div v-for="(tag, index) in this.tags" :key="index" class="col text-secondary">
                 #{{tag}}
               </div>
