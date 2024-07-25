@@ -8,7 +8,7 @@
               <div class="text-primary project-title"><strong>{{projectName}}</strong></div>
               <div class="project-brief">{{projectBrief}}</div>
             </div>
-            <div class="col col-lg-5 col-sm-4 col-12">
+            <div class="col col-lg-5 col-sm-4 col-12 pt-3 pt-sm-0">
               <div v-for="(tag, index) in this.tags" :key="index" class="col text-secondary">
                 #{{tag}}
               </div>
