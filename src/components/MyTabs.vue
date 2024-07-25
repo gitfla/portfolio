@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex bd-highlight">
     <div class="me-auto bd-highlight align-self-center justify-content-center">
-      <h1 class="text-primary">Flavio Campelo</h1>
+      <h1 class="text-primary">Flavio Fiszman</h1>
     </div>
-    <div class="nav nav-pills justify-content-center align-self-center" id="v-pills-tab" role="tablist">
+    <div class="nav nav-pills justify-content-end align-self-center" id="v-pills-tab" role="tablist">
       <a class="nav-link show active ms-3" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">home</a>
       <a class="nav-link ms-3" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="false">about</a>
       <a class="nav-link ms-3" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</a>
